@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moves</title>
+</head>
+<body>
+    <h1> Moves </h1>
+    <form method="POST" action="/play">
+        {{#each moves}}
+            <label for="{{this}}">{{this}}
+                <input type="radio" name="move" value="{{this}}" >
+            </label>
+        {{/each}}
+        <button type="submit" aria-label="Submit-move"> Submit move</button>
+    </form>
+</body>
+</html>
